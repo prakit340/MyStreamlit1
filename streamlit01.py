@@ -39,7 +39,16 @@ with colx3:
 dt = pd.read_csv('./data/iris.csv')
 st.write(dt.head(10))
 
+dt1 = dt['petal.length'].sum()
+dt2 = dt['petal.width'].sum()
+dt3 = dt['sepal.length'].sum()
+dt4 = dt['sepal.width'].sum()
+
+dx = [dt1, dt2, dt3, dt4]
+dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4"])
+
 if st.button("Show chart"):
-    dt.boxplot()
+    dt.bar_chart(dx2)
+    st.button("Don't show chart")
 else:
-    st.button("Show chart")
+    st.button("Don't show chart")
