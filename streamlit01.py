@@ -7,11 +7,10 @@ col1, col2 = st.columns(2)
 with col1:
     st.image('./pic/123456.jpg')
 with col2:
-    
     st.header("คุณประกฤต จันทร์ขำ")
-    st.subheader("บริษัท ไทยคอนโทรลโซลูชั่น จำกัด")
-    st.subheader("กาญจนบุรี")
-    st.subheader("มหาวิทยาลัยราชภัฏนครปฐม")
+    st.text("บริษัท ไทยคอนโทรลโซลูชั่น จำกัด")
+    st.write("กาญจนบุรี")
+    st.markdown("มหาวิทยาลัยราชภัฏนครปฐม")
     
 
 st.header("Prakit Junkhum")
