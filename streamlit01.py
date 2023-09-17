@@ -47,8 +47,17 @@ dt4 = dt['sepal.width'].sum()
 dx = [dt1, dt2, dt3, dt4]
 dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4"])
 
-if st.button("Show chart"):
-    dt.bar_chart(dx2)
+if  st.button("Show chart"):
+    st.bar_chart(dx2)
     st.button("Don't show chart")
 else:
     st.button("Don't show chart")
+
+
+html_2 = """
+<div style="background-color:#77c900;padding:15px 15px 15px 15px;margin:30px 30px 30px 30px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>การทำนาย Class ดอกไม้</h5></center>
+</div>
+"""
+
+st.markdown(html_2, unsafe_allow_html=True)
