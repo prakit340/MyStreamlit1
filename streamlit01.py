@@ -28,8 +28,8 @@ with colx1:
     st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
     st.image('./pic/123456.jpg')
 with colx2:
-    st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
+    st.markdown("<center><h5>Header 2</h5></center>", unsafe_allow_html=True)
     st.image('./pic/123456.jpg')
 with colx3:
-    st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
+    st.markdown("<center><h5>Header 3</h5></center>", unsafe_allow_html=True)
     st.image('./pic/123456.jpg')
