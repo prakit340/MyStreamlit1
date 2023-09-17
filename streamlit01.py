@@ -1,5 +1,5 @@
 import streamlit as st
-
+import pandas as pd
 
 st.title("การทดสอบการเขียน Website ด้วย Streamlit")
 st.header("Prakit Junkhum")
@@ -36,3 +36,10 @@ with colx3:
     st.image('./pic/iris3.jpg')
 
 
+dt = pd.read_csv('./data/iris.csv')
+st.write(dt.head(10))
+
+if st.button("Show chart"):
+    dt.boxplot()
+else:
+    st.button("Show chart")
