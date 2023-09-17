@@ -90,8 +90,10 @@ if st.button("ทำนายผล"):
         st.image("./pic/iris1.jpg")
    elif out[0] == 'Versicolor':       
         st.image("./pic/iris2.jpg")
-   else:
+   elif out[0] == 'Virginica':
         st.image("./pic/iris3.jpg")
-        
+
+   st.button("ไม่ทำนายผล")
+   
 else:
     st.button("ไม่ทำนายผล")
