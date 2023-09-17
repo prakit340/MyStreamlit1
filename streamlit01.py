@@ -25,11 +25,11 @@ st.markdown(html_1, unsafe_allow_html=True)
 
 colx1, colx2, colx3 = st.columns(3)
 with colx1:
-    st.header("Header 1")
+    st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
     st.image('./pic/123456.jpg')
 with colx2:
-    st.header("Header 2")
+    st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
     st.image('./pic/123456.jpg')
 with colx3:
-    st.header("Header 2")
+    st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
     st.image('./pic/123456.jpg')
