@@ -36,7 +36,3 @@ with colx3:
     st.image('./pic/iris3.jpg')
 
 
-dt = pd.read_csv('./data/iris.csv')
-st.write(dt.head(10))
-
-st.button("Show chart")
