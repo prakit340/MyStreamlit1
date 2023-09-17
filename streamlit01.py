@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.title("การทดสอบการเขียน Website ด้วย Streamlit")
 st.header("Prakit Junkhum")
@@ -26,10 +27,16 @@ st.markdown(html_1, unsafe_allow_html=True)
 colx1, colx2, colx3 = st.columns(3)
 with colx1:
     st.markdown("<center><h5>Header 1</h5></center>", unsafe_allow_html=True)
-    st.image('./pic/123456.jpg')
+    st.image('./pic/iris1.jpg')
 with colx2:
     st.markdown("<center><h5>Header 2</h5></center>", unsafe_allow_html=True)
-    st.image('./pic/123456.jpg')
+    st.image('./pic/iris2.jpg')
 with colx3:
     st.markdown("<center><h5>Header 3</h5></center>", unsafe_allow_html=True)
-    st.image('./pic/123456.jpg')
+    st.image('./pic/iris3.jpg')
+
+
+dt = pd.read_csv('./data/iris.csv')
+st.write(dt.head(10))
+
+st.button("Show chart")
